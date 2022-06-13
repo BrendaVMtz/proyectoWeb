@@ -1,10 +1,88 @@
+body {
+  margin: 0;
+    padding: 0;
+  background-color: #1A365D;
+  background-attachment: fixed;
+}
 
-            body {
-                height :665px;
-                background-image: url("");
-                background-size: 10rem;
-                
-              }
+
+
+.banner {
+  border: solid 13px aliceblue;
+  display: flex;
+  padding: 1.6em 0;
+  margin: 3em auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  max-width: 60%;
+}
+
+.titulo {
+  
+  background-color: transparent;
+  font-size: 2rem;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: 500; */
+  letter-spacing: 0.2em;
+  width: 90%;
+}
+
+.texto h1 {
+  margin: 0;
+  padding: 0 0 0.7em 0;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.6em 0;
+  margin: 2em auto;
+  max-width: 60%;
+}
+
+.formulario-input {
+  color: aliceblue;
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.formulario-input input {
+  outline: none;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    color: #073B4C;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+    width: 70%;
+}
+
+.formulario-sumbit button {
+  border: solid 3px aliceblue;
+  padding: 6px;
+  margin-top: 0.8em;
+  background: transparent;
+  border-radius: 20px;
+  color: aliceblue;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  height: 40px;
+  transition: background 0.6s ease;
+}
+
+.formulario-sumbit button:hover {
+  background-color: rgba(240, 248, 255, 0.219);
+}
+
+
                           .arbol {
                 width: 750px;
                 display:block;
