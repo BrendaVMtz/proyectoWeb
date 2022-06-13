@@ -1,14 +1,20 @@
 body {
   margin: 0;
     padding: 0;
-  background-color: #1A365D;
+    background-image: linear-gradient(15deg, #1A365D 0%, #2c5282 150%);
   background-attachment: fixed;
+  height: 100%;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 
-
 .banner {
-  border: solid 13px aliceblue;
+  border: solid 13px #EDF2F7;
   display: flex;
   padding: 1.6em 0;
   margin: 3em auto;
@@ -23,7 +29,7 @@ body {
   background-color: transparent;
   font-size: 2rem;
   text-align: center;
-  color: aliceblue;
+  color: #EDF2F7;
   font-family: 'Montserrat', sans-serif;
   /* font-weight: 500; */
   letter-spacing: 0.2em;
@@ -45,7 +51,7 @@ body {
 }
 
 .formulario-input {
-  color: aliceblue;
+  color: #EDF2F7;
   padding: 0.5em 0;
   font-size: 1.2rem;
   font-family: 'Lato', sans-serif;
@@ -53,10 +59,10 @@ body {
 
 .formulario-input input {
   outline: none;
-    background-color: aliceblue;
+    background-color: #EDF2F7;
     border: none;
     border-radius: 25px;
-    color: #073B4C;
+    color:#1A365D;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     height: 40px;
@@ -65,12 +71,12 @@ body {
 }
 
 .formulario-sumbit button {
-  border: solid 3px aliceblue;
+  border: solid 3px #EDF2F7;
   padding: 6px;
   margin-top: 0.8em;
   background: transparent;
   border-radius: 20px;
-  color: aliceblue;
+  color: #EDF2F7;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   cursor: pointer;
@@ -82,6 +88,90 @@ body {
   background-color: rgba(240, 248, 255, 0.219);
 }
 
+.card-container {
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 64px 48px;
+}
+
+.card-header
+{
+  padding: 24px;
+}
+
+.card-header__titulo
+{
+  font-family: 'Montserrat', sans-serif;
+  color:#EDF2F7;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 90%;
+  width: 100%;
+}
+
+.card__fondo
+{
+  background-color: #C53030;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
+    border-radius: 24px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .card__fondo{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__fondo{
+  filter: brightness(0.5) saturate(0);
+}
+
+.card__contenido
+{
+    padding: 24px;
+    position: absolute;
+    top: 0;
+}
+
+.card__titulo
+{
+  text-align: center;
+  color: #EDF2F7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  width: 90%;
+  text-transform: uppercase;
+}
 
                           .arbol {
                 width: 750px;
